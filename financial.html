@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application and Guarantor Forms</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            border-bottom: #000000 solid 2px;
+            /* display: inline; */
+            text-align: center;
+            width: 350px;
+            margin-bottom: 20px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            border-bottom: #000000 solid 2px;
+            /* display: inline; */
+            text-align: center;
+            width: 200px;
+            margin-bottom: 20px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 60%;
+            /* Adjust as needed */
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .details {
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+            display: block;
+            /* Labels on their own line */
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+
+        .input-group {
+            margin-left: 40px;
+            display: flex;
+            flex-direction: row;
+            /* Stack label and input */
+            margin-bottom: 10px;
+            /* Space between input groups */
+        }
+
+        .input {
+            width: 50%;
+            padding-top: 10px;
+            margin-left: 10px;
+            /* margin-bottom: 3px; */
+            border: none;
+            border-bottom: 3px dotted #000000;
+            box-sizing: border-box;
+        }
+        .inputSignat{
+            width: 25%;
+            font-weight: bold;
+            font-size: large;
+            padding-top: 10px;
+            margin-left: 10px;
+            /* margin-bottom: 3px; */
+            border: none;
+            border-bottom: 3px dotted #000000;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .amount {
+            margin-left: 90px;
+        }
+
+        .amount p {
+            margin-bottom: 3px;
+            font-size: smaller;
+            /* Make it smaller */
+        }
+
+        .official-use,
+        .guarantor-info {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .official-use p,
+        .guarantor-info p {
+            margin-bottom: 5px;
+        }
+
+        .signature-area {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .form-section2 {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px 70px;
+        }
+
+
+        .form-section2 h2 {
+            border-bottom: #000000 solid 2px;
+            /* display: inline; */
+            text-align: center;
+            width: 420px;
+            margin-bottom: 20px;
+            margin: 0 auto;
+        }
+
+        .clubLine {
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .words {
+            font-weight: bold;
+        }
+
+        /* Media query for smaller screens (e.g., phones) */
+        @media (max-width: 600px) {
+            .container {
+                max-width: 95%;
+                /* Take up more of the screen */
+            }
+
+            .amount {
+                flex-direction: column;
+                /* Stack amount items */
+                align-items: flex-start;
+                /* Align to the left */
+            }
+
+            .amount p {
+                font-size: smaller;
+                /* Make it even smaller on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="form-section">
+            <div class="header">
+                <p>The Financial Committee</p>
+                <p>Olofin Heritage Club</p>
+                <p>Okeho</p>
+                <p>Oyo State.</p>
+            </div>
+            <div class="details">
+                <p>Dear Sir,</p>
+                <h2>APPLICATION FOR LOAN</h2>
+                <div class="input-group">
+                    <label for="applicantName" class="label">APPLICANT'S NAME</label>
+                    <input type="text" id="applicantName" class="input" value="Solomon Akinyemi Makinde">
+                </div>
+                <p class="clubLine">I hereby apply for loan as a member of this club</p>
+
+                <div class="input-group">
+                    <label for="loanAmount" class="label">1. Amount of Loan</label>
+                    <input type="text" id="loanAmount" class="input" value="Five hundred thousand naira">
+                </div>
+                <div class="amount">
+                    <p>a. Maximum Amount: Five hundred thousand naira only</p>
+                    <p>b. Minimum Amount: Four hundred and ninety thousand naira only</p>
+                </div>
+
+                <div class="input-group">
+                    <label for="savings" class="label">2. Total Amount of savings as at date</label>
+                    <input type="text" id="savings" class="input" value="Two hundred and seventy thousand naira only">
+                </div>
+
+                <div class="input-group">
+                    <label for="purpose" class="label">3. Purpose of the loan</label>
+                    <input type="text" id="purpose" class="input" value="Personal">
+                </div>
+
+                <div class="input-group">
+                    <label for="repaymentPeriod" class="label">4. Period of Repayment</label>
+                    <input type="text" id="repaymentPeriod" class="input" value="Six months">
+                </div>
+
+                <div class="input-group">
+                    <label for="monthlyRepayment" class="label">5. Monthly Repayment</label>
+                    <input type="text" id="monthlyRepayment" class="input" value="Eighty-five thousand naira only">
+                </div>
+
+                <p class="words">I understand that the interest rate applicable to this loan is 5%.</p>
+                <p class="words">I also understand that the club is hereby authorized to use any means they deem
+                    appropriate to recover the loan and interest in the event of default of any monthly repayment.</p>
+
+                <div class="signature-area">
+                    <div><img src="./Screenshot 2025-02-05 203739.png" alt="Screenshot 2025-02-05 203739.png"></div>
+                    <p class="words" style="margin-top: 2px ;">Signature/ Thumbprint & Date</p>
+                </div>
+
+                <div class="official-use">
+                    <h3>OFFICIAL ONLY</h3>
+                    <div class="input-group">
+                        <label for="repaymentPeriod" class="label">1. Suitability of Application:</label>
+                        <input type="text" id="repaymentPeriod" class="input" value="">
+                    </div>
+                    <div class="input-group">
+                        <label for="repaymentPeriod" class="label">2. Total savings so far:</label>
+                        <input type="text" id="repaymentPeriod" class="input" value="">
+                    </div>
+                    <div class="input-group">
+                        <label for="repaymentPeriod" class="label">3. Standing as Guarantor for any pending
+                            loan:</label>
+                        <input type="text" id="repaymentPeriod" class="input" value="">
+                    </div>
+                    <div class="input-group">
+                        <label for="repaymentPeriod" class="label">4. Attendance at meeting:</label>
+                        <input type="text" id="repaymentPeriod" class="input" value="">
+                    </div>
+                    <div class="input-group">
+                        <label for="repaymentPeriod" class="label">5. Regularity of savings in the last 6
+                            months:</label>
+                        <input type="text" id="repaymentPeriod" class="input" value="">
+                    </div>
+                    <div class="input-group">
+                        <label for="repaymentPeriod" class="label">6. Probability of monthly repayment:</label>
+                        <input type="text" id="repaymentPeriod" class="input" value="">
+                    </div>
+                    <div class="input-group">
+                        <label for="repaymentPeriod" class="label">7. Loan Application Approved/Rejected</label>
+                        <input type="text" id="repaymentPeriod" class="input" value="">
+                    </div>
+                    <div class="input-group">
+                        <label for="repaymentPeriod" class="label">8. Any other comment:</label>
+                        <input type="text" id="repaymentPeriod" class="input" value="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section2">
+            <div class="header">
+                <p>The Financial Committee</p>
+                <p>Olofin Heritage Club</p>
+                <p>Okeho</p>
+                <p>Oyo State.</p>
+            </div>
+            <div class="details">
+                <p>Dear Sir/Ma,</p>
+                <h2>CONSENT OF 1<sup>ST</sup> GUARANTOR</h2>
+
+                <p>I do hereby agree to stand as 1<sup>st</sup> Guarantor for the Applicant for the loan.</p>
+
+                <p>I understand that I am using my savings with the club as security for the loan applied for and should
+                    the Applicant default, the cooperative is authorized to use my savings to pay at least 50% of the
+                    loan.</p>
+
+                <p>I also understand that I shall be discharged from this obligation upon the applicant paying at least
+                    25% of the loan and interest.</p>
+
+                <p>I further understand that I cannot apply for any loan until the Applicant pays at least 25% of the
+                    loan.</p>
+
+                <div class="guarantor-info">
+                    <p>1<sup>st</sup> Guarantor</p>
+                    <div class="input-group">
+                        <label for="guarantorName" class="label">Name</label>
+                        <input type="text" id="guarantorName" class="input" value="Gbolagade Waliu Adebare">
+                    </div>
+                    <div class="input-group">
+                        <label for="guarantorPhone" class="label">Phone No.</label>
+                        <input type="text" id="guarantorPhone" class="input" value="+393513686415 / +2347026450476">
+                    </div>
+                    <div class="input-group">
+                        <label for="guarantorSavings" class="label">Total Amount of savings</label>
+                        <input type="text" id="guarantorSavings" class="input">
+                    </div>
+                    <div class="input-group">
+                        <label for="guarantorDebt" class="label">Total outstanding debt</label>
+                        <input type="text" id="guarantorDebt" class="input">
+                    </div>
+                </div>
+
+                <div class="signature-area">
+                    <input type="text" class="inputSignat" value="waliu" >
+                    <p>Signature & Date</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
