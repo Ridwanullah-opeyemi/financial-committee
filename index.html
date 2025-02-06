@@ -13,27 +13,26 @@
 
         h2 {
             border-bottom: #000000 solid 2px;
-            /* display: inline; */
             text-align: center;
             width: 350px;
-            margin-bottom: 20px;
+            /* Initial width for larger screens */
             margin: 0 auto;
+            margin-bottom: 20px;
         }
 
         h3 {
             border-bottom: #000000 solid 2px;
-            /* display: inline; */
             text-align: center;
             width: 200px;
-            margin-bottom: 20px;
+            /* Initial width for larger screens */
             margin: 0 auto;
+            margin-bottom: 20px;
         }
 
         .container {
             max-width: 60%;
-            /* Adjust as needed */
             margin: 0 auto;
-            border: 1px solid #ccc;
+            /* border: 1px solid #ccc; */
             padding: 20px;
         }
 
@@ -48,7 +47,6 @@
         .label {
             font-weight: bold;
             display: block;
-            /* Labels on their own line */
             margin-bottom: 5px;
             margin-top: 15px;
         }
@@ -57,27 +55,24 @@
             margin-left: 40px;
             display: flex;
             flex-direction: row;
-            /* Stack label and input */
             margin-bottom: 10px;
-            /* Space between input groups */
         }
 
         .input {
             width: 50%;
             padding-top: 10px;
             margin-left: 10px;
-            /* margin-bottom: 3px; */
             border: none;
             border-bottom: 3px dotted #000000;
             box-sizing: border-box;
         }
-        .inputSignat{
+
+        .inputSignat {
             width: 25%;
             font-weight: bold;
             font-size: large;
             padding-top: 10px;
             margin-left: 10px;
-            /* margin-bottom: 3px; */
             border: none;
             border-bottom: 3px dotted #000000;
             box-sizing: border-box;
@@ -96,13 +91,12 @@
         .amount p {
             margin-bottom: 3px;
             font-size: smaller;
-            /* Make it smaller */
         }
 
         .official-use,
         .guarantor-info {
             margin-top: 20px;
-            border: 1px solid #ccc;
+            /* border: 1px solid #ccc; */
             padding: 10px;
         }
 
@@ -118,24 +112,24 @@
 
         .form-section {
             margin-bottom: 20px;
-            border: 1px solid #ccc;
+            /* border: 1px solid #ccc; */
             padding: 10px;
         }
 
         .form-section2 {
             margin-bottom: 20px;
-            border: 1px solid #ccc;
+            /* border: 1px solid #ccc; */
             padding: 10px 70px;
+            /* Initial padding for larger screens */
         }
-
 
         .form-section2 h2 {
             border-bottom: #000000 solid 2px;
-            /* display: inline; */
             text-align: center;
             width: 420px;
-            margin-bottom: 20px;
+            /* Initial width for larger screens */
             margin: 0 auto;
+            margin-bottom: 20px;
         }
 
         .clubLine {
@@ -149,22 +143,84 @@
 
         /* Media query for smaller screens (e.g., phones) */
         @media (max-width: 600px) {
+            h2 {
+                width: 90%;
+                /* Wider width on small screens */
+                font-size: 1.2em;
+                /* Adjust font size if needed */
+            }
+
+            h3 {
+                width: 80%;
+                /* Wider width on small screens */
+                font-size: 1.2em;
+                /* Adjust font size if needed */
+            }
+
             .container {
                 max-width: 95%;
-                /* Take up more of the screen */
+                padding: 10px;
+                /* Reduce padding on small screens */
+            }
+
+            .input-group {
+                flex-direction: column;
+                /* Stack label and input */
+                margin-left: 20px;
+                /* Reduce left margin */
+            }
+
+            .input {
+                width: 90%;
+                /* Make input wider */
+                margin-left: 0;
+                /* Remove left margin on input */
+                margin-bottom: 10px;
+                /* Add space below input */
+            }
+
+            .inputSignat {
+                width: 50%;
             }
 
             .amount {
-                flex-direction: column;
-                /* Stack amount items */
-                align-items: flex-start;
-                /* Align to the left */
+                margin-left: 20px;
+                /* Reduced margin for amount */
             }
 
             .amount p {
-                font-size: smaller;
-                /* Make it even smaller on mobile */
+                font-size: 0.8em;
+                /* Smaller font for amount details */
             }
+
+
+            .form-section {
+                padding: 10px;
+                /* Consistent padding */
+            }
+
+            .form-section2 {
+                padding: 10px;
+                /* Consistent padding */
+            }
+
+            .form-section2 h2 {
+                width: 90%;
+                /* Wider h2 on small screens */
+                font-size: 1.1em;
+                /* Adjust font size if needed */
+            }
+
+            .signature-area {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .signature-area img {
+                width: 80%;
+            }
+
         }
     </style>
 </head>
@@ -311,7 +367,7 @@
                 </div>
 
                 <div class="signature-area">
-                    <input type="text" class="inputSignat" value="waliu" >
+                    <input type="text" class="inputSignat" value="waliu">
                     <p>Signature & Date</p>
                 </div>
             </div>
